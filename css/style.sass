@@ -1,0 +1,462 @@
+@import 'reset'
+@import 'model'
+
+.swiper-container
+    height: 1024px
+    margin-bottom: 50px
+    .swiper-wrapper
+        .img-slider
+            background-size: cover
+            background-repeat: no-repeat
+            background-position: center center 
+            // background-attachment: fixed
+
+.swiper-room
+    height: 200px !important
+    margin: 5rem 0 10rem 0
+    .swiper-wrapper
+        transition-timing-function: linear !important
+        .swiper-slide
+            -webkit-filter: grayscale(1)
+            .img-slider
+                width: auto !important
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center center
+        .swiper-slide:hover
+            -webkit-filter: initial
+            transition: 1s
+                
+
+.o-6
+    opacity: 0.6
+
+.o-8
+    opacity: 0.8
+
+html
+    font-size: 16px
+
+body
+    font-family: -apple-system, BlinkMacSystemFont, Microsoft JhengHei, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    background: #efefef
+    color: #555
+    overflow-x: hidden
+    a
+        color: #333333
+    a:hover
+        color: #333333
+        text-decoration: none
+    p
+        line-height: initial
+
+
+.header
+    position: fixed
+    top: -76px
+    z-index: 999
+    width: 100%
+    transition: 1s
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.3)
+
+.header-open
+    top: 0px
+
+.reservation-box
+    transition: 0.5s
+    .reservation
+        color: #333333
+        text-decoration: none
+    .reservation:hover
+        text-decoration: none
+.reservation-box:hover
+    background: #d6e1e2
+    opacity: 1
+
+
+.swiper-pagination-bullets
+    text-align: right
+    bottom: 50px !important
+    padding-right: 75px
+    .swiper-pagination-bullet
+        width: 45px
+        height: 20px
+        border-radius: 0
+        display: -webkit-inline-box
+        display: -ms-inline-flexbox
+        display: inline-flex
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        background-color: transparent
+        div
+            width: 45px
+            height: 3px
+            border-radius: 0
+            background: #ffffff
+    .swiper-pagination-bullet-active
+        background-color: transparent
+
+
+.top-logo
+    position: absolute
+    top: 50%
+    right: 50%
+    margin-top: -250px
+    margin-right: -150px
+    z-index: 1000
+    width: 300px
+    height: 300px
+    transition: 3s
+    opacity: 0
+    .top-logo-img
+        width: 100%
+        height: 100%
+    .slogon
+        position: relative
+
+.top-menu
+    z-index: 1000
+    position: absolute
+    bottom: 50px
+    left: 75px
+    .top-menu-li
+        float: left
+    .top-menu-li:hover
+        a
+            opacity: 0.8
+
+.show-o
+    opacity: 0.9
+
+.font-animate-down
+    transform: translateY(-25px)
+    display: inline-block
+    transition: 1s
+    opacity: 0
+.font-animate-down-show
+    transition: 1s
+    transform: translateY(0px)
+    opacity: 1
+
+.top-logo:hover
+    opacity: 0.8
+
+
+.hover-opacity:hover
+    opacity: 0.6
+
+
+.img-bar
+    position: relative
+    margin: 200px 0
+    .color-back
+        width: 40%
+        height: 200px
+        background: #d6e1e2
+        position: absolute
+        top: 0
+    .img-box
+        position: absolute
+        top: 0
+        width: 50%
+        height: 450px
+        .img-cover
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+.text-back
+    box-shadow: 0px 0px 5px rgba(0%,0%,0%,0.3)
+    background: #ffffff
+
+
+.img-bar-right
+    .color-back
+        left: 0
+    .img-box
+        right: 0
+
+.img-bar-left
+    .color-back
+        right: 0 
+    .img-box
+        left: 0
+        
+
+
+.a-o
+    color: #333333
+.a-o:hover
+    color: #333333
+    text-decoration: none
+
+.more-a
+    display: inline-block
+    color: rgba(0,0,0,.5)
+    padding: 1rem 0
+    border-radius: 0
+    font-weight: bold
+    letter-spacing: 2px
+    text-transform: uppercase
+    text-decoration: none
+    position: relative
+    &:before,&:after
+        content: ''
+        display: block
+        position: absolute
+        height: 1px
+        width: 0
+    &:before
+        transition: width 0s ease,background .4s ease
+        left: 0
+        right: 0
+        bottom: 6px
+    &:after
+        right: 2.2%
+        bottom: 6px
+        background: #d6e1e2
+        transition: width .4s ease
+.more-a:hover
+    text-decoration: none
+    color: rgba(0,0,0,.8)
+.more-a:hover:before
+    width: 97.8%
+    background: #d6e1e2
+    transition: width .4s ease
+.more-a:hover:after
+    width: 97.8%
+    background: 0 0
+    transition: all 0s ease
+
+
+
+.back-slider
+    padding: 3rem 0 6rem 0
+    // background: url('../img/1.jpg')
+    background: #d6e1e2
+    background-size: 150%
+    background-repeat: no-repeat
+    background-position-x: 0%
+
+
+.news-bar
+    .bar-card-w
+        border-radius: 0
+        border: none
+        .card-img-top
+            border-radius: 0
+            height: 150px
+        .date-tag
+            background: #b1a64d
+            color: #ffffff
+
+
+.album
+    .img-box
+        .img-cover
+            opacity: 0.8
+            height: auto
+            width: 100%
+        .img-cover:hover
+            opacity: 1
+            transition: 0.5s
+
+
+footer
+    background: rgba(0,0,0,.8)
+    // .footer-copyright
+    //     border-top: 1px solid #ffffff
+
+.page-top
+    background: #1e1e1e
+.page-top:hover
+    opacity: 0.6
+    transition: 0.5s
+
+#map
+    height: 500px
+
+
+.worksList
+    padding: 0 25px
+    margin: 0 auto
+    max-width: 1500px
+    display: flex
+    flex-wrap: wrap
+    li
+        padding: 0 15px 50px
+        width: 40%
+        width: calc(50%)
+        display: block
+        a
+            display: block
+            position: relative
+            img
+                transition: all 0.6s ease
+                width: 100%
+                height: auto
+                opacity: 0.8
+            .bg
+                position: absolute
+                width: 100%
+                height: 100%
+                background: #1c1c1c
+                background: rgba(28,28,28,0.5)
+                left: 0
+                top: 0
+                display: flex
+                align-content: center
+                align-items: center
+                /* flex-direction: column; */
+                opacity: 0
+                transition: all 0.4s ease
+                .inner
+                    width: 100%
+                    .worksTitle
+                        position: relative
+                    .worksTitle:after
+                        content: ""
+                        width: 50px
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        right: 0
+                        margin: auto
+                        border-bottom: 1px solid #EEE
+        a:hover
+            .bg
+                opacity: 1
+
+.room
+    .nav-pills
+        background: #d6e1e2
+        .nav-item
+            .active
+                background-color: #ffffff
+                color: #333333
+                border-radius: 0
+    .tab-content
+        background: #ffffff
+
+
+.title-line
+    position: relative
+.title-line:after
+    display: block
+    position: absolute
+    bottom: -30px
+    left: 0
+    right: 0
+    width: 1px
+    height: 20px
+    margin: 0 auto
+    background: rgba(0, 0, 0, 0.5)
+    content: ""
+
+
+.img-hover-zoom
+    overflow: hidden
+    img
+        transition: transform .5s ease
+.img-hover-zoom:hover
+    img 
+        transform: scale(1.1)
+
+
+.transform-hover-y   
+    transition: 0.5s                
+.transform-hover-y:hover
+    transform: translateY(-10px)
+
+@keyframes change 
+    0%
+        background-position: 0% 50%
+    50%
+        background-position: 100% 50%
+    100%
+        background-position: 0% 50%
+
+
+.p-value
+    line-height: 1.6
+
+
+.btn
+    position: relative
+    overflow: hidden
+    text-transform: uppercase
+    box-sizing: border-box
+    transition: 0.5s ease-in-out
+    cursor: pointer
+
+.btn-solid
+    border: 1px solid #aaaaaa
+    width: 50%
+    padding: 15px 0
+
+.btn-solid:before
+    content: ''
+    position: absolute
+    top: 0
+    right: -50px
+    bottom: 0
+    left: 0
+    border-right: 50px solid transparent
+    border-bottom: 80px solid #54CD36
+    -webkit-transform: translateX(-100%)
+    transform: translateX(-100%)
+    transition: 0.5s ease-in-out
+    z-index: -1
+
+.btn-solid:hover
+    color: #ffffff
+    border: 1px solid #54CD36
+
+.btn-solid:hover:before
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+
+.animated-r
+  opacity: 0
+  transition: all 1.5s
+  transform: translateX(50%)
+
+.animated-l
+  opacity: 0
+  transition: all 1.5s
+  transform: translateX(-50%)
+
+.animated-c
+  opacity: 0
+  transition: all 1.5s
+  transform: translatey(-50px)
+
+.fadeIn
+  opacity: 1
+  transform: translateY(0)
+
+
+#news
+    .newsList
+        .newsList-li
+            line-height: 30px
+            padding: 0 0 1px
+            a
+                background: #FFF
+                display: block
+                padding: 29px 5%
+                vertical-align: middle
+                span.date
+                    font-size: 10pt
+                    line-height: 1.2em
+                    display: inline-block
+                    vertical-align: middle
+                    margin: 0 15px 0 0
+                    border-bottom: 1px solid #1c1c1c
+            a:hover
+                opacity: 0.5
+                transition: all 0.5s
