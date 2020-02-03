@@ -141,6 +141,14 @@ $(document).ready(function () {
             }
         });
 
+        //room
+        $('.room-back').each(function () {
+            var thisPos = $(this).offset().top;
+            if ((windowHeight + scrollPos - windowHeight / 2) >= thisPos) {
+                $(this).addClass('back-up');
+            }
+        });
+
 
         $('.img-bar').each(function () {
             var contentHeight = $(this).find('.text-back').outerHeight();

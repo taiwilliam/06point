@@ -101,6 +101,33 @@ body
         background-color: transparent
 
 
+.room-back
+    position: relative
+    overflow: hidden
+    .room-inner
+        .img-cover
+            height: 200px
+.room-back:before
+    transform: translate(0, 100%)
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-image: linear-gradient(to bottom, #2b4038, #24342e)
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) .6s, -webkit-transform cubic-bezier(0.215, 0.61, 0.355, 1) .6s;
+    content: ''
+// .room-back:nth-of-type(2):before
+//     background-image: linear-gradient(to bottom, #68504c, #5c4440)
+// .room-back:nth-of-type(3):before
+//     background-image: linear-gradient(to bottom, #23313b, #1f2e38)
+
+
+
+.back-up:before
+    transform: translate(0, 0)
+
 .top-logo
     position: absolute
     top: 50%
