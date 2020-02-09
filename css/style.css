@@ -174,7 +174,7 @@ body p {
   line-height: initial;
 }
 
-.header {
+.header, .room-header {
   position: fixed;
   top: -76px;
   z-index: 999;
@@ -241,28 +241,24 @@ body p {
   background-color: transparent;
 }
 
-.room-back {
-  position: relative;
-  overflow: hidden;
+.room-wrap {
+  margin-bottom: 10rem;
+  background: #fff;
 }
 
-.room-back .room-inner .img-cover {
-  height: 200px;
-}
-
-.room-back:before {
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
+.room-wrap .room-main-img {
+  background-image: url("../img/fake/r1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  height: 600px;
   width: 100%;
-  height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2b4038), to(#24342e));
-  background-image: linear-gradient(to bottom, #2b4038, #24342e);
-  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s, -webkit-transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s;
-  content: '';
+  margin-bottom: 1px;
+}
+
+.room-wrap .swiper-room .img-slider {
+  -webkit-filter: initial;
 }
 
 .back-up:before {
@@ -448,6 +444,23 @@ body p {
   background: 0 0;
   -webkit-transition: all 0s ease;
   transition: all 0s ease;
+}
+
+.active {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.active:before {
+  width: 97.8%;
+  background: #d6e1e2;
+  -webkit-transition: width .4s ease;
+  transition: width .4s ease;
+}
+
+.active:after {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .back-slider {
