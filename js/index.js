@@ -64,35 +64,7 @@ $(document).ready(function () {
 		}, 1000);
     });
 
-    //bar-hover-slider 高度設定
-    var wh = $(window).width();
-    $('.bar-hover-slider-img').width(wh * 0.75)
-    $('.bar-hover-slider-img').height(wh * 0.3)
-
-    $('.bar-hover-slider-wrap').height(wh * 0.3)
-
-
-    $('.bar-hover-slider-list:nth-of-type(1)').hover(function () {
-        $('.bar-hover-slider-img').css('z-index', '0');
-        $('.bar-hover-slider-img:nth-of-type(1)').css('z-index', '1')
-    });
-    $('.bar-hover-slider-list:nth-of-type(2)').hover(function () {
-        $('.bar-hover-slider-img').css('z-index', '0');
-        $('.bar-hover-slider-img:nth-of-type(2)').css('z-index', '1')
-    });
-    $('.bar-hover-slider-list:nth-of-type(3)').hover(function () {
-        $('.bar-hover-slider-img').css('z-index', '0');
-        $('.bar-hover-slider-img:nth-of-type(3)').css('z-index', '1')
-    });
-    $('.bar-hover-slider-list:nth-of-type(4)').hover(function () {
-        $('.bar-hover-slider-img').css('z-index', '0');
-        $('.bar-hover-slider-img:nth-of-type(4)').css('z-index', '1')
-    });
-    $('.bar-hover-slider-list:nth-of-type(5)').hover(function () {
-        $('.bar-hover-slider-img').css('z-index', '0');
-        $('.bar-hover-slider-img:nth-of-type(5)').css('z-index', '1')
-    });
-
+    
 
     //img-bar str
 

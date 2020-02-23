@@ -142,6 +142,12 @@ table {
   transition: 1s;
 }
 
+.swiper-activity {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .o-6 {
   opacity: 0.6;
 }
@@ -187,6 +193,21 @@ body p {
 
 .header-open {
   top: 0px;
+}
+
+.activity-body {
+  background: #fff;
+}
+
+.activity-body .nav-white {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #fff !important;
+  opacity: 0;
+}
+
+.activity-body .nav-white:hover {
+  opacity: 1;
 }
 
 .reservation-box {
@@ -469,6 +490,16 @@ body p {
   background-size: 150%;
   background-repeat: no-repeat;
   background-position-x: 0%;
+}
+
+.menu-block {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.menu-block .menu-block-ul .menu-block-li {
+  cursor: pointer;
 }
 
 .news-bar .bar-card-w {
